@@ -1,0 +1,230 @@
+/* ===== Reset ===== */
+* {
+  margin: 0; /* commit: Remove default margin */
+  padding: 0; /* commit: Remove default padding */
+  box-sizing: border-box; /* commit: Include border in width/height */
+  font-family: 'Poppins', sans-serif; /* commit: Elegant modern font */
+}
+
+/* ===== Body ===== */
+body {
+  display: flex; /* commit: Center content */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ffe5ec, #e0f7fa); /* commit: soft pastel background */
+}
+
+/* ===== Main Heading ===== */
+.main h1 {
+  font-size: clamp(2rem, 5vw, 3rem); /* commit: Responsive heading size */
+  color: #555; /* commit: Dark gray text for contrast */
+  text-align: center;
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+.main h1:hover {
+  transform: scale(1.05); /* commit: Slight hover scale */
+  color: #ff8da1; /* commit: Light pink hover */
+}
+
+/* ===== Glass Container ===== */
+.glassContainer {
+  backdrop-filter: blur(15px); /* commit: Glass effect */
+  background: rgba(255, 255, 255, 0.25); /* commit: translucent white */
+  border-radius: 25px; /* commit: Rounded corners */
+  border: 2px solid rgba(255, 255, 255, 0.5); /* commit: Soft border */
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1); /* commit: Subtle shadow */
+  animation: fadeIn 1s ease forwards;
+}
+
+/* ===== Timer Display ===== */
+.timerDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: bold;
+  color: #ff8da1; /* commit: Pink digits */
+  text-shadow: 0 0 10px #ffe5ec, 0 0 20px #ffd1dc; /* commit: Soft glow */
+}
+
+.timerDisplay span {
+  animation: pulse 1.5s infinite alternate; /* commit: Pulsating digits */
+}
+
+/* ===== Buttons ===== */
+.buttonsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.buttonsContainer button {
+  padding: 12px 30px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #ffdde1, #ffe5ec); /* commit: Light pastel gradient */
+  color: #555; /* commit: Text color */
+  box-shadow: 0 4px 20px rgba(255,255,255,0.5); /* commit: soft button glow */
+}
+
+.buttonsContainer button:hover {
+  transform: scale(1.1); /* commit: Slight enlarge */
+  background: linear-gradient(135deg, #ffe5ec, #ffb6c1); /* commit: Hover gradient */
+  box-shadow: 0 0 25px rgba(255, 173, 182, 0.6); /* commit: Glow effect */
+  color: #fff; /* commit: White text on hover */
+}
+
+/* ===== Animations ===== */
+@keyframes pulse {
+  0% { color: #ff8da1; text-shadow: 0 0 10px #ffe5ec; }
+  50% { color: #ffb6c1; text-shadow: 0 0 20px #ffd1dc; }
+  100% { color: #ff8da1; text-shadow: 0 0 10px #ffe5ec; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px){
+  .timerDisplay { gap: 15px; font-size: clamp(1.5rem, 8vw, 2.5rem);}
+  .buttonsContainer { flex-direction: column; gap: 15px;}
+}
+
+
+/* ===== Footer ===== */
+.footer {
+    margin-top: 40px; /* commit: Space above footer */
+    text-align: center; /* commit: Center text */
+    font-size: 0.9rem; /* commit: Small text */
+    color: #555; /* commit: Light gray text */
+    background: rgba(255, 255, 255, 0.3); /* commit: Slight translucent background */
+    padding: 15px 10px; /* commit: Inner spacing */
+    border-radius: 15px; /* commit: Rounded corners for footer */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* commit: Soft shadow */
+    backdrop-filter: blur(10px); /* commit: Glass effect */
+    transition: all 0.3s ease; /* commit: Smooth hover transition */
+}
+
+.footer:hover {
+    background: rgba(255, 255, 255, 0.5); /* commit: Slightly brighter on hover */
+    color: #ff8da1; /* commit: Highlight color */
+    transform: scale(1.02); /* commit: Slight scale effect */
+}
+
+
+
+/* ===== Floating Social Menu ===== */
+.social-menu {
+    position: fixed; /* stay on screen */
+    top: 50%; 
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+/* Social icon container */
+.social-icon {
+    background: rgba(255, 255, 255, 0.2); /* soft pastel glass */
+    backdrop-filter: blur(12px); /* soft blur */
+    padding: 10px 15px;
+    border-radius: 0 25px 25px 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 50px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    border-left: 4px solid #fff; /* subtle left border */
+}
+
+/* Social link text */
+.social-icon a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+    opacity: 0;
+    margin-left: 10px;
+    transition: all 0.4s ease;
+    font-size: 0.95rem;
+}
+
+/* Glow animation */
+.social-icon::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+    background-size: 400% 400%;
+    filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 0 25px 25px 0;
+    z-index: -1;
+    animation: gradientBG 8s ease infinite;
+}
+
+/* Hover effects */
+.social-icon:hover {
+    width: 180px; /* expand */
+    background: rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* glowing effect */
+}
+
+.social-icon:hover a {
+    opacity: 1; /* show text */
+}
+
+.social-icon:hover::before {
+    opacity: 1; /* show glow */
+}
+
+/* Different base colors for social icons */
+.social-icon.github::before { background: linear-gradient(45deg, #333, #6e5494, #8b5cf6, #c084fc); }
+.social-icon.linkedin::before { background: linear-gradient(45deg, #0a66c2, #00c3ff, #0fb9ff, #3ab0ff); }
+.social-icon.x::before { background: linear-gradient(45deg, #1da1f2, #00f0ff, #3bf2ff, #7bf5ff); }
+
+/* Gradient animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .social-menu {
+        top: auto;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: row;
+    }
+
+    .social-icon {
+        border-radius: 25px;
+        width: 50px;
+    }
+
+    .social-icon:hover {
+        width: 120px;
+    }
+}

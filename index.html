@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Stopwatch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+ <!-- ===== Floating Social Menu ===== -->
+<div class="social-menu">
+    <div class="social-icon github">
+        <a href="https://github.com/Waqar-5" target="_blank">GitHub</a>
+    </div>
+    <div class="social-icon linkedin">
+        <a href="https://www.linkedin.com/in/waqar-ali-997b962b5/" target="_blank">LinkedIn</a>
+    </div>
+    <div class="social-icon x">
+        <a href="mailto:wa5134810@gmail.com" target="_blank">Email</a>
+    </div>
+</div>
+
+
+
+  <!-- Main Stopwatch Container -->
+  <div class="main">
+    <h1>Light Stopwatch</h1>
+    <div class="glassContainer">
+
+      <!-- Timer Display -->
+      <div class="timerDisplay">
+        <span id="minute">00</span> : 
+        <span id="second">00</span> : 
+        <span id="milliSecond">00</span>
+      </div>
+
+      <!-- Buttons -->
+      <div class="buttonsContainer">
+        <button onclick="stop()" class="stop">Pause</button>
+        <button onclick="start()" id="startBtn" class="start">Start</button>
+        <button onclick="reset()" class="reset">Reset</button>
+      </div>
+
+    </div>
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <p>Made with ❤️ by Waqar Ali | Smart Stopwatch App 2025</p>
+    </footer>
+</div>
+
+  <script src="app.js"></script>
+</body>
+</html>

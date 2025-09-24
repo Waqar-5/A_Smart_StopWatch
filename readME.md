@@ -23,8 +23,7 @@ A **lightweight, beautiful, and fully responsive stopwatch** with **modern desig
 
 ## 🖥️ Screenshots
 
-![Screenshot](<img width="1348" height="629" alt="Screenshot (140)" src="https://github.com/user-attachments/assets/a09eeba9-2f24-4e84-b699-9c45160c3b78" />
-)  
+(<img width="1348" height="629" alt="Screenshot (140)" src="https://github.com/user-attachments/assets/a09eeba9-2f24-4e84-b699-9c45160c3b78" />)  
 *Example of the stopwatch UI with floating social links.*
 
 ---
@@ -81,19 +80,15 @@ smart-stopwatch/
 ├── app.js           # JavaScript timer functionality
 ├── README.md        # This file
 └── screenshot.png   # Optional screenshot for project showcase
-💻 Live Demo
-You can host this project on GitHub Pages or any static site hosting service:
 
-Live Demo https://waqar-5.github.io/A_Smart_StopWatch/
+You can host this project on GitHub Pages or any static site hosting service:
 
 👨‍💻 Author
 Waqar Ali – Full Stack Developer & UI/UX Enthusiast
 
-GitHub: waqarali
+GitHub: [github](https://github.com/Waqar-5/)
 
-LinkedIn: Waqar Ali
-
-X (Twitter): @waqarali
+LinkedIn: [Waqar Ali](https://www.linkedin.com/in/waqar-ali-997b962b5/)
 
 📜 License
 This project is open source and available under the MIT License.

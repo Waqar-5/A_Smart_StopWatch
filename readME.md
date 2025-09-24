@@ -86,9 +86,3 @@ You can host this project on GitHub Pages or any static site hosting service:
 👨‍💻 Author
 Waqar Ali – Full Stack Developer & UI/UX Enthusiast
 
-GitHub: [github](https://github.com/Waqar-5/)
-
-LinkedIn: [Waqar Ali](https://www.linkedin.com/in/waqar-ali-997b962b5/)
-
-📜 License
-This project is open source and available under the MIT License.

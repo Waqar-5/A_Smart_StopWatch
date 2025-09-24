@@ -23,7 +23,8 @@ A **lightweight, beautiful, and fully responsive stopwatch** with **modern desig
 
 ## 🖥️ Screenshots
 
-![Screenshot](screenshot.png)  
+![Screenshot](<img width="1348" height="629" alt="Screenshot (140)" src="https://github.com/user-attachments/assets/a09eeba9-2f24-4e84-b699-9c45160c3b78" />
+)  
 *Example of the stopwatch UI with floating social links.*
 
 ---
@@ -32,7 +33,7 @@ A **lightweight, beautiful, and fully responsive stopwatch** with **modern desig
 
 1. **Clone the Repository**:
 ```bash
-git clone https://github.com/yourusername/smart-stopwatch.git
+git clone https://github.com/Waqar-5/A_Smart_StopWatch
 Open index.html in your browser.
 
 Controls:
@@ -83,7 +84,7 @@ smart-stopwatch/
 💻 Live Demo
 You can host this project on GitHub Pages or any static site hosting service:
 
-Live Demo Link
+Live Demo https://waqar-5.github.io/A_Smart_StopWatch/
 
 👨‍💻 Author
 Waqar Ali – Full Stack Developer & UI/UX Enthusiast

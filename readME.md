@@ -8,7 +8,7 @@ A **lightweight, beautiful, and fully responsive stopwatch** with **modern desig
 
 ## 🖥️ Screenshots
 
-![Screenshot](screenshot.png) 
+![Screenshot](./assets/stop_watch.jpg) 
 
 ## 🎨 Features
 

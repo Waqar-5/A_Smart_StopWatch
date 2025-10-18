@@ -88,11 +88,7 @@ Live Demo Link
 👨‍💻 Author
 Waqar Ali – Full Stack Developer & UI/UX Enthusiast
 
-GitHub: waqarali
+GitHub: https://github.com/Waqar-5
 
-LinkedIn: Waqar Ali
+LinkedIn: https://www.linkedin.com/in/waqar-ali-997b962b5/
 
-X (Twitter): @waqarali
-
-📜 License
-This project is open source and available under the MIT License.

@@ -4,6 +4,12 @@ A **lightweight, beautiful, and fully responsive stopwatch** with **modern desig
 
 ---
 
+
+
+## 🖥️ Screenshots
+
+![Screenshot](screenshot.png) 
+
 ## 🎨 Features
 
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices.
@@ -20,10 +26,7 @@ A **lightweight, beautiful, and fully responsive stopwatch** with **modern desig
 - **Pastel & Light Colors**: Eye-catching color scheme for a modern, soft look.
 
 ---
-
-## 🖥️ Screenshots
-
-![Screenshot](screenshot.png)  
+ 
 *Example of the stopwatch UI with floating social links.*
 
 ---
